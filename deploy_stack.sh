@@ -5,7 +5,7 @@ if ! [ -x "$(command -v docker)" ]; then
   exit 1
 fi
 
-export BASIC_AUTH="true"
+export BASIC_AUTH="false"
 export AUTH_URL="http://basic-auth-plugin:8080/validate"
 
 sha_cmd="shasum -a 256"
